@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Intrid</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+	</body>
+</head>
+<body>
+	<!-- Заглавное меню -->
+	<header>
+		<!-- Верхнее меню большого экрана -->
+		<div class="row big">
+			<div class="bignav nav">
+				<div class="bignav-nav">
+					<nav>
+						<a href="#">Доставка и оплата</a>
+						<a href="#">Отзывы</a></li>
+						<a href="#">Блог и новости</a>
+						<a href="#">О компании</a>
+						<a href="#">Контакты</a>
+						<a href="#">Оптовая продажа</a>
+					</nav>
+				</div>
+				<div class="bignav-info">
+					<div class="phone">
+						<object type="image/svg+xml" data='img/icons/Phone.svg' width="14" height="14">
+						  <img src="img/icons/Phone.png" width="14" height="14" alt="phone" />
+						</object>
+						<a href="#">8 800 123 33 22</a>
+					</div>
+					
+					<div class="time">
+						<object type="image/svg+xml" data='img/icons/Clock.svg' width="14" height="14">
+							<img src="img/icons/Clock.png" width="14" height="14" alt="clock" />
+						</object>
+						<a href="#">10:00 — 20:00</a>
+					</div>
+					
+					<div class="persarea">
+						<object type="image/svg+xml" data='img/icons/User.svg' width="14" height="14">
+							<img src="img/icons/User.png" width="14" height="14" alt="User" />
+						</object>
+						<a href="#">Личный кабинет</a>
+					</div>
+				</div>
+			</div>
+		
+		</div> 
+		<!-- Главное меню -->
+		<div class="row main">
+			<div class="mainnav">
+				<div class="mainnav-mobile">
+					<div class="burger"><a href=""><img src="img/icons/Burger.svg" width="40" height="28"alt="MENU"></a></div>
+					<div class="persarea"><a href=""><img src="img/icons/User.svg" width="26" height="28"alt=""></a></div>
+				</div>
+				<div class="mainnav-logo">
+					<img src="img/logo-intrid.png">
+				</div>
+				
+
+				<div class="mainnav-nav">
+					<nav role='navigation'>
+						<ul>
+							<li><a href="#">Цветы <i class="fas fa-angle-down"></i></a></li>
+							<li><a href="#">Авторские букеты</a></li>
+							<li><a href="#">Подарки</a></li>
+						</ul>		
+					</nav>
+				</div>
+				<div class="mainnav-info">
+					<div class="heart">
+						<a href="#">
+							<img src="img/icons/Like.svg" width="28" height="24" alt="heart" />
+						</a>
+					</div>
+					<div class="bag">
+						<a href="#">
+							<img src="img/icons/Bag.svg">
+							<p>корзина</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<section class="maininfo">
+		<div class="container">
+			<div class="maininfo-header">
+				<nav>
+					<a href="#">Главная</a>
+					<p>/</p>
+					<a href="#">Личный кабинет</a>
+					<p>/</p>
+					<a href="#">Корзина</a>
+					<p>/</p>
+					<a href="#" class="disabled">Оформление заказа</a>
+				</nav>
+				<h1>Оформление заказа</h1>
+			</div>
+			<div class="maininfo-page">
+				<div class="row">
+					<div class="col-sm-12 col-md-4 col-md-push-8">
+						<!-- Правая часть -->
+						<div class="maininfo-page-right" id="maininfo-page-right" data-spy="affix" data-offset-top="300">
+							<!-- Товары в заказе -->
+							<div class="orders">
+								<table>
+									<caption>Товары в заказе</caption>
+									<tr class="trheader">
+										<th>наименование</th>
+										<th>кол-во</th>
+										<th>сумма</th>
+									</tr>
+									<tr>
+										<td>Букет «Классика»</td>
+										<td>1</td>
+										<td>1000</td>
+									</tr>
+									<tr>
+										<td>Букет «Классика»</td>
+										<td>1</td>
+										<td>1000</td>
+									</tr>
+									<tr>
+										<td>Букет «Классика»</td>
+										<td>1</td>
+										<td>1000</td>
+									</tr>
+								</table>
+							</div>
+							<div class="toorder" id="toorder">
+								<div class="toorder-cost">
+									<p>стоимость:</p>
+									<span>3650 руб.</span>
+								</div>
+								<div class="toorder-discount">
+									<p>скидка:</p>
+									<span>200 руб.</span>
+								</div>
+								<div class="toorder-total">
+									<p>итого:</p>
+									<span>3450 руб.</span>
+								</div>
+								<button>заказать</button><br>
+								<div class="toorder-info">
+									<input type="checkbox" name="" id="check" class="check1">
+									<label for="check" id="checkl" class="checkl1">Получать информацию о заказе по СМС</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-8 col-md-pull-4">
+						<!-- Левая часть -->
+						<div class="maininfo-page-left">
+							<div class="yourdata">
+								<div class="row">
+									<div class="col-xs-12 col-sm-6 col-md-6">
+										<h2>Ваши данные</h2>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-6">
+										<button class="reg">я уже зарегестрирован</button>
+									</div>
+								</div>
+								<form action="#">
+									<div class="row">
+										<div class="col-xs-12 col-sm-6 col-md-6">
+											<label for="yourname">Ваше имя</label><br>
+											<input class="foc" type="text" name="" placeholder="Ваше имя" id="yourname"><br>
+											<label for="youremail">Электронная почта</label><br>
+											<input class="foc" type="text" name="" placeholder="Ваш e-mail" id="youremail"><br>
+										</div>
+										<div class="col-xs-12 col-sm-6 col-md-6">
+											<label for="yourphone">Телефон</label><br>
+											<input class="foc" type="text" placeholder="+7 (___) ___ - __ - __" id="yourphone">
+										</div>
+									</div>
+									<label>Способ получения</label><br>
+									<input type="radio" name="choise" id="radio1" value="hide"> <label for="radio1" class="radiolab" id="radiol1">Заберу в магазине</label>
+									<input type="radio" name="choise" id="radio2" value="show"> <label for="radio2" class="radiolab" id="radiol2">Доставит курьер</label>
+								</form>
+							</div>
+							<div class="recipient">
+								<h2>Получатель</h2>
+								<form action="#">
+									<label>опции</label><br>
+									<input type="checkbox" name="" id="check2" class="checkb">
+									<label for="check2" class="checkl2">Я сам получу заказ</label>
+									<input type="checkbox" name="" id="check3" class="checkb">
+									<label for="check3" class="checkl2">Сделать фото получателя с букетом</label><br>
+									<input type="checkbox" name="" id="check4" class="checkb">
+									<label for="check4" class="checkl2 checkl22">Добавить пожелание</label>
+									<input type="checkbox" name="" id="check5" class="checkb">
+									<label for="check5" class="checkl2">Отправить цветы анонимно</label><br>
+									<label for="postrec">пожелание</label>
+									<textarea placeholder="Что написать на открытке?" id="postrec"></textarea>
+									<div class="row">
+										<div class="col-xs-12 col-sm-6 col-md-6">
+											<label for="namerec">Имя получателя</label><br>
+											<input type="text" id="namerec" placeholder="Введите имя получателя"><br>
+										</div>
+										<div class="col-xs-12 col-sm-6 col-md-6">
+											<label for="phonerec">Телефон получателя</label><br>
+											<input type="text" id="phonerec" placeholder="+7 (___) ___ - __ - __">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12 col-sm-6 col-md-6">
+											<label for="daterec">Дата доставки</label><br>
+											<input type="text" placeholder="ДД.ММ.ГГГГ">
+										</div>
+										<div class="col-xs-12 col-sm-6 col-md-6">
+											<label for="timerec">Время доставки</label><br>
+											<select id="timerec" class="form-control">
+												<option>10:00 — 19:00</option>
+												<option>10:00 — 19:00</option>
+												<option>10:00 — 19:00</option>
+												<option>10:00 — 19:00</option>
+											</select>
+										</div>
+									</div>							
+									<div class="row">
+										<div class="col-xs-12 col-sm-5 col-md-5">
+											<label for="cityrec">Населенный пункт</label><br>
+											<select id="cityrec" class="form-control">
+												<option>Воронеж</option>
+												<option>Борисоглебск</option>
+												<option>Липецк</option>
+												<option>Елец</option>
+											</select>
+										</div>
+										<div class="col-xs-12 col-sm-5 col-md-5">
+											<label for="adrrec">Адрес</label>
+											<input type="text" id="adrrec" placeholder="Введите адрес">
+										</div>
+										<div class="col-xs-12 col-sm-2 col-md-2">
+											<label for="adrrec">Кв./офис</label>
+											<input type="text" id="adrrec" placeholder="ХХХ">
+										</div>
+									</div>
+									<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2c4bf2848192b021f6b6242cb0199feb06d0ea416e6959d42861c3ff97a0a132&amp;width=100%25&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script>
+									<label for="comrec" id="comrecl">Дополнительная информация</label>
+									<textarea placeholder="Комментарий к заказу" id="comrec"></textarea>
+								</form>
+							</div>
+							<div class="payment">
+								<h2>Оплата</h2>
+								<form action="#">
+									<label for="payment-radio">Выбор способа оплаты</label>
+									<div class="payment-radio">
+										<div class="row">
+											<div class="col-xs-12 col-sm-4 col-md-4">
+												<div class="radio" data-value="One">
+													<div class="radio-info">
+														<img src='img/logosber.png'><br>
+														<p class="sber">Оплата картой онлайн</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-4 col-md-4">
+												<div class="radio" data-value="Two">
+													<div class="radio-info">
+														<img src="img/logoyan.png">
+														<p>Яндекс.Деньги</p>
+
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-4 col-md-4">
+												<div class="radio" data-value="Three">
+													<div class="radio-info">
+														<img src="img/icons/pay.png" width="63" height="50" alt="pay"  />
+														<p class="nal">Курьеру наличными</p>
+													</div>												
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="cantainer-fluid">
+			<div class="row"> 
+				<div class="col-sm-12 col-md-5">
+					<div class="logo">
+						<img class="logo-foot" src="img/logo-intrid.png">
+						<div class="social">
+							<a href="">
+								<img src="img/icons/vk.svg" width="40" height="40" alt="vk">
+							</a>
+							<a href="">
+								<img src="img/icons/facebook.svg" width="40" height="40" alt="fb" />
+							</a>
+							<a href="">
+								<img src="img/icons/instagram.svg" width="40" height="40" alt="instagram" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-5">
+					<div class="foot-info">
+						<div class="phone">
+							<object type="image/svg+xml" data='img/icons/Phone.svg' width="21" height="21">
+								<img src="img/icons/Phone.png" width="21" height="21" alt="phone" />
+							</object>
+							<a href="">
+								8 800 123 33 22
+							</a>
+						</div>
+						<div class="mail">
+							<object type="image/svg+xml" data='img/icons/Mail.svg' width="29" height="21">
+								<img src="img/icons/Mail.png" width="29" height="21" alt="mail" />
+							</object>
+							<a href="">
+								info@lavkaroz.ru
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-2">
+					<div class="foot-make">
+						<a href="">Сделано в Intrid</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+</html>
